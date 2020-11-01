@@ -32,36 +32,47 @@
         android:textSize="18sp"
         app:layout_constraintEnd_toStartOf="@+id/guideline"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/toggleButton2" />
-
-    <ToggleButton
-        android:id="@+id/toggleButton2"
-        android:layout_width="143dp"
-        android:layout_height="180dp"
-        android:layout_marginTop="44dp"
-        android:background="@drawable/year_select_button"
-        android:text="ToggleButton"
-        app:layout_constraintEnd_toStartOf="@+id/toggleButton3"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintHorizontal_chainStyle="spread_inside"
-        app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
-
-    <ToggleButton
-        android:id="@+id/toggleButton3"
-        android:layout_width="143dp"
-        android:layout_height="180dp"
-        android:layout_marginTop="44dp"
-        android:background="@drawable/year_select_button"
-        android:text="ToggleButton"
-        app:layout_constraintEnd_toStartOf="@+id/guideline"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintHorizontal_chainStyle="spread_inside"
-        app:layout_constraintStart_toEndOf="@+id/toggleButton2"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/radio_group" />
 
     <RadioGroup
         android:id="@+id/radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        <RadioButton
+            android:layout_width="139dp"
+            android:layout_height="210dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/visitor_button_selector"
+            android:button="@android:color/transparent"
+            android:gravity="bottom|center"
+            android:paddingBottom="10dp"
+            android:text="Visitor"
+            android:textColor="@color/buttons_color"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:layout_width="139dp"
+            android:layout_height="210dp"
+            android:background="@drawable/student_button_selector"
+            android:button="@android:color/transparent"
+            android:gravity="bottom|center"
+            android:paddingBottom="10dp"
+            android:text="Student"
+            android:textColor="@color/buttons_color"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radio_group2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -127,7 +138,7 @@
         app:layout_constraintEnd_toStartOf="@+id/guideline"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/radio_group"
+        app:layout_constraintTop_toBottomOf="@+id/radio_group2"
         app:srcCompat="@drawable/dot_2" />
 
     <Button
@@ -151,7 +162,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_end="16dp" />
+        app:layout_constraintGuide_end="20dp" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline2"

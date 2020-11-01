@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:height="210dp"
+        android:width="139dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#FCDCE5"/>
+            <corners android:radius="23dp"/>
+        </shape>
+    </item>
+    <item android:height="160dp"
+        android:width="230dp"
+        android:bottom="15dp"
+        android:gravity="center"
+        android:drawable="@drawable/boy_8"/>
+    <item
+        android:drawable="@drawable/tick"
+        android:width="27dp"
+        android:height="27dp"
+        android:gravity="top|right"
+        android:right="8dp"
+        android:top="8dp"/>
+</layer-list>
