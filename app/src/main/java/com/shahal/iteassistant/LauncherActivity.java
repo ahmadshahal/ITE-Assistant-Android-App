@@ -11,9 +11,11 @@ public class LauncherActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_launcher);
-    }
-    public void onButtonClicked(View view)
-    {
-        startActivity(new Intent(this, SelectYearActivity.class));
+        findViewById(R.id.button1).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LauncherActivity.this, SelectYearActivity.class));
+            }
+        });
     }
 }
