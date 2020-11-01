@@ -13,7 +13,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Help us provide you the\nbest experience"
+        android:text="Help us provide you the best experience"
         android:textAlignment="textStart"
         android:textColor="#FFFFFF"
         android:textSize="22sp"
